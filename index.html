@@ -29,6 +29,7 @@
      }
 
      body{
+          margin:25px;
         background-color:Silver;
         font-family: Lucida Sans;
      } 
@@ -87,8 +88,26 @@
  * {
   box-sizing: border-box;
 }
-        
- 
+
+div.polaroid {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  
+  margin-bottom: 25px;
+  
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+  
+.dp{background-color: white;
+    padding:8px;}
+
+
 
 
         
@@ -115,17 +134,18 @@
         
         <div class="row">
         <div class="column">    
-        <img src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/10455678_10152663843714323_4001301764058027244_n.jpg?_nc_cat=108&_nc_ht=scontent-arn2-2.xx&oh=a1842721d0b4885bdda435490e5d4446&oe=5D247A54"width="400" height="400" onclick="myFunction(this);">
+
+        <img class="dp" src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/10455678_10152663843714323_4001301764058027244_n.jpg?_nc_cat=108&_nc_ht=scontent-arn2-2.xx&oh=a1842721d0b4885bdda435490e5d4446&oe=5D247A54"width="400" height="400" onclick="myFunction(this);">
         </div>
 
         <div class="column">
         
-        <img src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/14051773_10154414985854323_2913810402519200903_n.jpg?_nc_cat=106&_nc_ht=scontent-arn2-2.xx&oh=56a0e4a28b5313d800822015406bb1ce&oe=5CE81F85"width="400" onclick="myFunction(this);" >
+        <img class="dp" src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/14051773_10154414985854323_2913810402519200903_n.jpg?_nc_cat=106&_nc_ht=scontent-arn2-2.xx&oh=56a0e4a28b5313d800822015406bb1ce&oe=5CE81F85"width="400" onclick="myFunction(this);" >
 
         </div>
         
          <div class="column">
-        <img src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/10426269_10153176099744323_4485110845605858697_n.jpg?_nc_cat=111&_nc_ht=scontent-arn2-2.xx&oh=bf82b0e312e9df22a35b496c3e2dc54e&oe=5D24FD9C" width="500" height="400" onclick="myFunction(this);">
+        <img class="dp" src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/10426269_10153176099744323_4485110845605858697_n.jpg?_nc_cat=111&_nc_ht=scontent-arn2-2.xx&oh=bf82b0e312e9df22a35b496c3e2dc54e&oe=5D24FD9C" width="500" height="400" onclick="myFunction(this);">
         </div>
 
         </div>
@@ -162,14 +182,14 @@ function myFunction(imgs) {
 
         <div class="row">
         <div class="column">  
-        <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/10156079_10152800257899323_7118581999196948036_n.jpg?_nc_cat=103&_nc_ht=scontent.fcph1-1.fna&oh=d7e882d73ce4e11cb70ec0df0de70904&oe=5CDB8B30" width="400" onclick="myFunction(this);">
+        <img class="dp" src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/10156079_10152800257899323_7118581999196948036_n.jpg?_nc_cat=103&_nc_ht=scontent.fcph1-1.fna&oh=d7e882d73ce4e11cb70ec0df0de70904&oe=5CDB8B30" width="400" onclick="myFunction(this);">
     </div>
         <div class="column">
-        <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/1654119_10152790676444323_9212438433025580069_n.jpg?_nc_cat=100&_nc_ht=scontent.fcph1-1.fna&oh=be7c206a0e270c4bf1fc0833368ad1a1&oe=5D20DB99" width="400"
+        <img  class="dp" src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/1654119_10152790676444323_9212438433025580069_n.jpg?_nc_cat=100&_nc_ht=scontent.fcph1-1.fna&oh=be7c206a0e270c4bf1fc0833368ad1a1&oe=5D20DB99" width="400"
          onclick="myFunction(this);">
      </div>
        <div class="column">
-        <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/1798681_1599039956985728_4377748974721493493_n.jpg?_nc_cat=105&_nc_ht=scontent.fcph1-1.fna&oh=d70bae9becbf5c25263541dc40a51f31&oe=5D220D95" width="400" height="300" onclick="myFunction(this);">
+        <img class="dp" src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/1798681_1599039956985728_4377748974721493493_n.jpg?_nc_cat=105&_nc_ht=scontent.fcph1-1.fna&oh=d70bae9becbf5c25263541dc40a51f31&oe=5D220D95" width="400" height="300" onclick="myFunction(this);">
     </div>
 
         </div> 
@@ -207,8 +227,36 @@ function myFunction(imgs) {
         <p class="readmode"> Grimstad was a beautiful small city in the south of Norway, with loads of natural beauty. it was full of sea and nature. As it was coastal city, you could see the ocean any time from home.But then it was a city of peace & quiet. They have a saying that , that southern part of Norway is the sunniest part of Norway!!.
         It was a tough city to live in if you are coming from a place of buzz & crowd like Dhaka. The city has more or less 20000 people, of which half are students. The city had a very small town center with a few shops, few grocery shops, maybe three pubs and that is it. But the view of the city can amaze you instantly. It was a proper place to study with no distractions and peace & quiet. Some of the photos i have taken from groos beach & other places. 
         </p>    
+        
 
+          
+        
+        
+        
+        
+        
+
+        
+        
+        
+        <div class="polaroid">
+        <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/11149513_10153176103079323_8242412944892405899_n.jpg?_nc_cat=102&_nc_ht=scontent.fcph1-1.fna&oh=13cdfaa3d75c2a54c50473ff87382092&oe=5D1B797B" style="width:24.5%">
+    
+        <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/11149330_10153176103804323_4798673957564262055_n.jpg?_nc_cat=100&_nc_ht=scontent.fcph1-1.fna&oh=66af8e2e102380ac102337e40583d02f&oe=5D1B8AD7" style="width:24.5%">
+        
+        <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/10410990_10153176100044323_89644793081775649_n.jpg?_nc_cat=111&_nc_ht=scontent.fcph1-1.fna&oh=f870f72e1fb8773efeb17e3b1f92aa61&oe=5CE18703" style="width:24.5%">
+        
+        <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/10923279_10153176104604323_8067289669604894398_n.jpg?_nc_cat=101&_nc_ht=scontent.fcph1-1.fna&oh=8bc5c48e33627d849086563d4765d66e&oe=5D1E52B5"style="width:24.5%">
        
+
+        
+       
+         <div class="container">
+         </div>
+      </div>
+ 
+
+
         
     </body>
 </html>
