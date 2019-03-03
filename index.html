@@ -116,7 +116,7 @@
 
 
 div.polaroid {
-  width: 100%;
+  width: 99%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
@@ -134,6 +134,46 @@ div.container {
 .dp { background-color:silver;
        padding:4px;
 }
+
+.dropbtn {
+  background-color: grey;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
         
         
     </style>
@@ -150,15 +190,18 @@ div.container {
       
     </div>
         
+        <div class="dropdown">
+  <button class="dropbtn">Contents</button>
+  <div class="dropdown-content">
+  <a href="#">Journey of a 10000 miles</a>
+  <a href="#">Random thoughts</a>
+  <a href="#">Beautiful people</a>
+  <a href="#">Special moments</a>
+  </div>
+</div>
         
 
-        <h3>Contents</h3>
-        <ul>
-            <li><em>Journey of a 10000 miles</em></li>
-            <li><em>Random thoughts</em></li>
-            <li><em>Beautiful people</em></li>
-            <li><em>Special moments</em></li>
-        </ul>
+        
         
         <h2>First post</h2>
         <h6>Posted on 15 jan 2019</h6>
@@ -169,13 +212,28 @@ div.container {
         <P id="norge">Welcome to Norway!<P>
         
         <div class="row">
-        <div class="column">    
+        <div class="column">  
+        <div class="dropdown">  
+
         <img class="dp" src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/10455678_10152663843714323_4001301764058027244_n.jpg?_nc_cat=108&_nc_ht=scontent-arn2-2.xx&oh=a1842721d0b4885bdda435490e5d4446&oe=5D247A54"width="400" height="400" onclick="myFunction(this);">
+
+        <div class="dropdown-content">
+
+          <img src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/10455678_10152663843714323_4001301764058027244_n.jpg?_nc_cat=108&_nc_ht=scontent-arn2-2.xx&oh=a1842721d0b4885bdda435490e5d4446&oe=5D247A54"width="400" height="400">
         </div>
+      </div>
+    </div>
 
         <div class="column">
-        
+        <div class="dropdown">  
+
         <img class="dp" src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/14051773_10154414985854323_2913810402519200903_n.jpg?_nc_cat=106&_nc_ht=scontent-arn2-2.xx&oh=56a0e4a28b5313d800822015406bb1ce&oe=5CE81F85"width="400" onclick="myFunction(this);" >
+
+        <div class="dropdown-content">
+
+          <img src="https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/14051773_10154414985854323_2913810402519200903_n.jpg?_nc_cat=106&_nc_ht=scontent-arn2-2.xx&oh=56a0e4a28b5313d800822015406bb1ce&oe=5CE81F85" width="400">
+        </div>
+      </div>
 
         </div>
         
@@ -252,7 +310,8 @@ function myFunction(imgs) {
         <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/10410990_10153176100044323_89644793081775649_n.jpg?_nc_cat=111&_nc_ht=scontent.fcph1-1.fna&oh=f870f72e1fb8773efeb17e3b1f92aa61&oe=5CE18703" style="width:24.5%">
         
         <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/10923279_10153176104604323_8067289669604894398_n.jpg?_nc_cat=101&_nc_ht=scontent.fcph1-1.fna&oh=8bc5c48e33627d849086563d4765d66e&oe=5D1E52B5"style="width:24.5%">
-       
+         
+        </div> 
 
         
        
@@ -293,6 +352,34 @@ function myFunction(imgs) {
         </div>
       </div>
 
-        
+      <h5> First Summer in Grimstad!! </h5>
+      <div>
+        <p>
+          Summer in Grimstad is bright and sunny. Though it is not that hot as you imagine. But the weather, the sea, the mountains, the booming flowers makes the nature absolutely beautiful.As the semester finished, I was working a lot in summer, still got to enjoy the nature.There used to be a summer festival called SKral,and I got the chance to be there in the festival.
+        </p>
+      </div>
+      
+      <div class="dropdown">
+       <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/11745912_10153411363299323_7964294270152508921_n.jpg?_nc_cat=109&_nc_ht=scontent.fcph1-1.fna&oh=e6096e6098323679efa942ca1084c328&oe=5D1E8326" width="400" >
+         <div class="dropdown-content">
+          <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/11745912_10153411363299323_7964294270152508921_n.jpg?_nc_cat=109&_nc_ht=scontent.fcph1-1.fna&oh=e6096e6098323679efa942ca1084c328&oe=5D1E8326" >
+        </div>
+      </div>
+        <div class="dropdown">
+        <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/11742853_10153411349039323_7489382414027796878_n.jpg?_nc_cat=108&_nc_ht=scontent.fcph1-1.fna&oh=af0fd9bda19b72937e8f7de682f28d61&oe=5D1AD187" width="400">
+        <div class="dropdown-content">  
+        <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/11742853_10153411349039323_7489382414027796878_n.jpg?_nc_cat=108&_nc_ht=scontent.fcph1-1.fna&oh=af0fd9bda19b72937e8f7de682f28d61&oe=5D1AD187">
+        </div>
+        </div> 
+         <div class="dropdown">  
+          <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/11745375_10153411344054323_6298081909288601476_n.jpg?_nc_cat=109&_nc_ht=scontent.fcph1-1.fna&oh=f4326d544e89f85e889812edf5a1a1d2&oe=5D28AAA7" width="400">
+          <div class="dropdown-content">
+            <img src="https://scontent.fcph1-1.fna.fbcdn.net/v/t1.0-9/11745375_10153411344054323_6298081909288601476_n.jpg?_nc_cat=109&_nc_ht=scontent.fcph1-1.fna&oh=f4326d544e89f85e889812edf5a1a1d2&oe=5D28AAA7">
+             </div>
+        </div>
+
+
+
+
     </body>
 </html>
